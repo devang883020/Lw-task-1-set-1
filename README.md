@@ -20,25 +20,37 @@ Kubernetes Setup:
 
 
 Nginx deployment with 2 replicas
+
 NodePort service exposing Nginx on port 30080
+
 MySQL deployment with persistent storage
+
 Secrets for MySQL credentials
+
 Services for both Nginx and MySQL
+
 PersistentVolumeClaim for MySQL data
 
 To deploy with Docker Compose:
-bashCopydocker-compose up -d
+docker-compose up -d
+
 To deploy to Kubernetes:
+
 Create namespace (optional)
+
 kubectl create namespace myapp
 
 Apply all configurations
 kubectl apply -f kubernetes/
 
-Verify deployments
+Verify deployments:
+
 kubectl get deployments
+
 kubectl get services
+
 kubectl get pods
+
 Key features of this setup:
 
 High availability with 2 Nginx replicas

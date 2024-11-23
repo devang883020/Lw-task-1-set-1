@@ -29,13 +29,13 @@ PersistentVolumeClaim for MySQL data
 To deploy with Docker Compose:
 bashCopydocker-compose up -d
 To deploy to Kubernetes:
-bashCopy# Create namespace (optional)
+Create namespace (optional)
 kubectl create namespace myapp
 
-# Apply all configurations
+Apply all configurations
 kubectl apply -f kubernetes/
 
-# Verify deployments
+Verify deployments
 kubectl get deployments
 kubectl get services
 kubectl get pods
